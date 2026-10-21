@@ -1,0 +1,23 @@
+# secrets and local config
+.env
+*.env
+secrets*.h
+!secrets.example.h
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+# large data (anything over 10 MB stays out of git)
+data/*.parquet
+data/*.zip
+*.h5

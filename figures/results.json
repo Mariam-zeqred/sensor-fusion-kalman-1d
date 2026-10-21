@@ -1,0 +1,72 @@
+{
+  "source": "data/hive-1C5A00_history_2026-10-03.json and data/model_params.json, copied from Mariam-zeqred/incubator-telemetry-analysis; produced by `python -m kalman1d`",
+  "readings": 1367,
+  "model": {
+    "a_c_per_min": 0.5908,
+    "b_per_min": 0.0111,
+    "tau_h_min": 4.9175,
+    "tau_min": 90.1
+  },
+  "measurement_noise_std_c": 0.0121,
+  "process_noise_std_c_per_sqrt_min": 0.01774,
+  "q_grid": {
+    "min": 0.005,
+    "max": 0.5,
+    "points": 41,
+    "log_likelihood_at_best": 3659.0
+  },
+  "steady_state_15s": {
+    "prior_std_c": 0.0124,
+    "posterior_std_c": 0.0087,
+    "gain": 0.511
+  },
+  "nis_mean": 0.921,
+  "roughness_rms_step_c": {
+    "raw": 0.0359,
+    "moving_average": 0.0304,
+    "kalman": 0.0318
+  },
+  "dropout": {
+    "ramp": {
+      "window_min": [
+        190.0,
+        200.0
+      ],
+      "readings_hidden": 40,
+      "true_change_c": 3.15,
+      "kalman_rms_error_c": 0.034,
+      "kalman_max_abs_error_c": 0.072,
+      "kalman_sigma_at_end_c": 0.054,
+      "hold_last_rms_error_c": 1.814,
+      "hold_last_max_abs_error_c": 3.18
+    },
+    "steady": {
+      "window_min": [
+        250.0,
+        260.0
+      ],
+      "readings_hidden": 40,
+      "true_change_c": -0.05,
+      "kalman_rms_error_c": 0.032,
+      "kalman_max_abs_error_c": 0.059,
+      "kalman_sigma_at_end_c": 0.054,
+      "hold_last_rms_error_c": 0.034,
+      "hold_last_max_abs_error_c": 0.07
+    }
+  },
+  "synthetic": {
+    "note": "synthetic.make_synthetic(seed 0): 240 min, setpoint 35 \u00b0C, sensor noise 0.03 \u00b0C",
+    "measurement_noise_std_c": 0.0303,
+    "process_noise_std_c_per_sqrt_min": 0.01991,
+    "rmse_c": {
+      "raw": 0.031,
+      "moving_average": 0.1431,
+      "kalman": 0.0156
+    },
+    "mean_error_while_heating_c": {
+      "moving_average": -0.3168,
+      "kalman": -0.0027
+    },
+    "truth_inside_2sigma_fraction": 0.958
+  }
+}

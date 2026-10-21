@@ -1,0 +1,5 @@
+# the filter itself needs only numpy; matplotlib is for the figures
+numpy>=1.26
+matplotlib>=3.8
+pytest>=8
+ruff>=0.5
