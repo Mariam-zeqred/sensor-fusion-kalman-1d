@@ -91,8 +91,9 @@ Raw, moving average and Kalman estimate lie on top of each other at this scale, 
 first honest finding: the SHT31 is quiet (0.012 °C), so on a healthy sensor there is little to
 smooth. The lower panel is the diagnostic that matters: the innovation (reading minus model
 prediction) against its expected ±2√S band. 3.4 % of readings fall outside it, against the
-4.6 % a Gaussian would give; the largest excursions (0.05–0.07 °C) sit at the heater-on
-transitions near minutes 110 and 200, where the model is weakest.
+4.6 % a Gaussian would give; the largest excursions (0.05–0.06 °C) sit mostly at the heater
+transitions between minutes 188 and 204, where the model is weakest, with a few one-off
+outliers of the same size elsewhere (minutes 31, 265 and 319).
 
 ### 15-second steps and 0.01 °C counts
 ![zoom](figures/02_zoom_heater_pulse.png)
